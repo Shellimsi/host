@@ -1,0 +1,9 @@
+language: go
+go:
+  - master
+jobs:
+  include:
+    - stage: test
+      name: "Run test"   
+      script:
+        - go test -v
